@@ -3,7 +3,7 @@
 *This Project follows the Career Essentials in GitHub Professional Certificate course through LinkedIn Learning.*
 
 Certificate:
-
+[Link](https://www.linkedin.com/learning/certificates/b242bd62206232b9159db18ec1efcc58a827d3e6369ffd0a7116e15172392c88?trk=share_certificate)
 
 
 ## About
