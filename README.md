@@ -23,28 +23,29 @@ In your repository, so to Settings > Pages and select the main branch as the sou
 Create a YAML File with the following format:
 
 ```yaml
-title: The Future in Tech
-subtitle: Powered by LinkedIn Learning
-author: Ray Villalobos
-description: Conversations with leaders building next generation technology tools.
-image: /images/artwork.jpg
-language: en-us
-category: Technology
-format: audio/mpeg
-link: https://n-smith-byu.github.io/podcast-test
+title: <Podcast Title>
+subtitle: <Podcast Subtitle>
+author: <Author Name>
+description: <Podcast Description>
+link: <GitHub Pages URL (from previous step)>
+image: <Artwork Location>
+language: <Podcast Language e.g. en-us>
+category: <Podcast Category e.g Technology, https://podcasters.apple.com/support/1691-apple-podcasts-categories>
+format: <format of files e.g. audion/mpeg>
+
 item:
-  - title: EP01-What's Happening in 2023
-    description: Ray Villalobos and Content Managers Natalie Pao and Simon St. Laurent discuss what 2023 holds for the future in technology.
-    published: Thu, 12 Jan 2023 18:00:00 GMT
-    file: /audio/TFIT01.mp3
-    duration: 00:00:36
-    length: 576,324
+  - title: <Podcast Episode Title>
+    description: <Podcast Episode Description>
+    published: <Date Published e.g. Thu, 12 Jan 2023 18:00:00 GMT>
+    file: <Filename e.g. /audio/TFIT01.mp3>
+    duration: <duration e.g. 00:00:36>
+    length: <length e.g. 576,324 (Get Info on your files)>
   ...Repeat for each episode
 ```
 
 ### 3. Sample Workflow:
 
-You will need to create a workflow in GitHub Actions:
+You will need to create a workflow in GitHub Actions. Here is a sample:
 
 ```main.yaml
 name: Generate Podcast Feeds
