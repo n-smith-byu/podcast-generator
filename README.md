@@ -1,4 +1,4 @@
-# Podcasat XML Generator
+# Podcast XML Generator
 
 *This Project follows the Career Essentials in GitHub Professional Certificate course through LinkedIn Learning.*
 
@@ -10,11 +10,17 @@ Certificate:
 
 This GitHub Action converts a YAML file to XML for a podcast feed.
 
-## Sample Usage
+## Usage
 
-https://github.com/n-smith-byu/podcast-test/
+Example: https://github.com/n-smith-byu/podcast-test/
 
-### 1. Create a YAML File
+### 1. Turn on GitHub Pages
+
+In your repository, so to Settings > Pages and select the main branch as the source. This will create a link to your page and give all of the content in the main branch a URL. Note the URL for the next step.
+
+### 2. Create a YAML File
+
+Create a YAML File with the following format:
 
 ```yaml
 title: The Future in Tech
@@ -33,9 +39,12 @@ item:
     file: /audio/TFIT01.mp3
     duration: 00:00:36
     length: 576,324
+  ...Repeat for each episode
 ```
 
-### 2. Create GitHub Action:
+### 3. Sample Workflow:
+
+You will need to create a workflow in GitHub Actions:
 
 ```main.yaml
 name: Generate Podcast Feeds
